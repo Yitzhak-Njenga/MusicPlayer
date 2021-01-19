@@ -24,6 +24,7 @@ public class MusicActivty extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 Intent intent =new Intent(MusicActivty.this, AlbumLibrary.class);
+                startActivity(intent);
             }
         });
 
@@ -31,6 +32,7 @@ public class MusicActivty extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 Intent intent  = new Intent(MusicActivty.this,AlbumLibrary.class);
+                startActivity(intent);
             }
         });
     }
