@@ -23,7 +23,7 @@ public class MusicActivty extends AppCompatActivity {
         MusicLibrary.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent =new Intent(MusicActivty.this)
+                Intent intent =new Intent(MusicActivty.this, AlbumLibrary.class);
             }
         });
     }
