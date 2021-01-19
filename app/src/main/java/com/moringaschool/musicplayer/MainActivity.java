@@ -12,7 +12,7 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        final Intent intent = new Intent(MainActivity.this,MusicActivity.class);
+        final Intent intent = new Intent(MainActivity.this,MusicActivty.class);
         Thread thread = new Thread(){
             @Override
             public void run() {
