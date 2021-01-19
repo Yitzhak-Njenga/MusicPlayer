@@ -45,6 +45,13 @@
         android:layout_marginRight="20dp"
         android:layout_marginLeft="20dp"/>
 
-
+    <ImageView
+        android:id="@+id/subClip"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:src="@drawable/ic_baseline_subscriptions_24"
+        android:layout_below="@id/sub_music"
+        android:layout_marginTop="20dp"
+        android:layout_centerHorizontal="true"/>
 
 </RelativeLayout>
