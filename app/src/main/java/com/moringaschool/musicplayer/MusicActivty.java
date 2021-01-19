@@ -5,6 +5,9 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.os.Bundle;
 import android.widget.ImageView;
 
+import butterknife.BindView;
+import butterknife.ButterKnife;
+
 public class MusicActivty extends AppCompatActivity {
     @BindView(R.id.musicClip) ImageView MusicLibrary;
     @BindView(R.id.subClip) ImageView Subscription;
@@ -13,5 +16,6 @@ public class MusicActivty extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_music_activty);
+        ButterKnife.bind(this);
     }
 }
