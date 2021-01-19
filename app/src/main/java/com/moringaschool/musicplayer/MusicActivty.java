@@ -26,6 +26,13 @@ public class MusicActivty extends AppCompatActivity {
                 Intent intent =new Intent(MusicActivty.this, AlbumLibrary.class);
             }
         });
+
+        Subscription.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent  = new Intent(MusicActivty.this,AlbumLibrary.class);
+            }
+        });
     }
 
 }
