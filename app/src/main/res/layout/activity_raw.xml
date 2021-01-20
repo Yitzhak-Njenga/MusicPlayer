@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:layout_marginTop="50dp">
+
+    <ImageView
+        android:layout_width="130dp"
+        android:layout_height="100dp"
+        android:id="@+id/albumImageView"
+        android:scaleType="centerCrop"
+        android:src="@mipmap/ic_launcher"/>
+    <LinearLayout
+        android:layout_width="281dp"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_alignParentRight="true"
+        android:padding="10dp">
+
+        <TextView
+            android:id="@+id/titleTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/albumImageView"
+            android:layout_alignParentRight="true"
+            android:text="Album Title"
+            android:textColor="#F31010"
+            android:textColorLink="#EF0B0B" />
+
+    <TextView
+        android:id="@+id/artistTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Artist Name"
+        android:textColor="@color/black"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/albumImageView" />
+
+        <TextView
+            android:id="@+id/alumLink"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Link"
+            android:textColor="#3F51B5"
+            android:textStyle="italic"
+            android:textSize="10dp" />
+
+
+    </LinearLayout>
+
+</RelativeLayout>
