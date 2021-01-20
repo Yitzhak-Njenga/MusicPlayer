@@ -29,7 +29,7 @@
             android:textColorLink="#EF0B0B" />
 
     <TextView
-        android:id="@+id/artistTextView"
+        android:id="@+id/artistNameView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Artist Name"
