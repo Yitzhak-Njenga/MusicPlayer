@@ -5,7 +5,7 @@ import com.moringaschool.musicplayer.Constants;
 import retrofit2.Retrofit;
 import retrofit2.converter.gson.GsonConverterFactory;
 
-public class MuscClient {
+public class MusicClient {
 
     private static Retrofit retrofit = null;
     private static final String BASE_URL = Constants.DEZER_API_BASE_URL;

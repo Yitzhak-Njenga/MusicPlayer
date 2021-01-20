@@ -10,6 +10,8 @@ import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.moringaschool.musicplayer.R;
+import com.moringaschool.musicplayer.models.Contributor;
+import com.moringaschool.musicplayer.models.Songs;
 import com.moringaschool.musicplayer.models.Artist;
 import com.moringaschool.musicplayer.models.Datum;
 import com.moringaschool.musicplayer.models.Datum_;
@@ -21,9 +23,9 @@ import butterknife.ButterKnife;
 
 public class AlbumsAdapter extends RecyclerView.Adapter<AlbumsAdapter.AlbumsViewHolder>{
     private Context mcontext;
-    private List<Artist> mArtists;
+    private List<Contributor> mArtists;
 
-    public AlbumsAdapter(Context context,List<Artist> artists){
+    public AlbumsAdapter(Context context,List<Contributor> artists){
         mcontext = context;
         mArtists = artists;
 
@@ -43,10 +45,10 @@ public class AlbumsAdapter extends RecyclerView.Adapter<AlbumsAdapter.AlbumsView
 
         }
 
-        public  void bindAlbums(Artist artist){
+        public  void bindAlbums(Contributor artist){
             mArtistName.setText(artist.getName());
-           mTittleTextView.setText(artist.getId());
-           mAlbumLink.setText(artist.getTracklist());
+            mTittleTextView.setText(artist.getRole());
+            mAlbumLink.setText(artist.getLink());
 
         }
 
