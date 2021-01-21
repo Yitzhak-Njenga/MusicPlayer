@@ -14,7 +14,10 @@
         android:theme="@style/Theme.MusicPlayer">
         <activity android:name=".AlbumLibrary"></activity>
         <activity android:name=".MusicActivty" />
-        <activity android:name=".MainActivity">
+        <activity android:name=".MainActivity"
+            android:theme="@style/NoActionBarTheme">
+
+
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
