@@ -10,7 +10,7 @@
         android:layout_height="100dp"
         android:id="@+id/albumImageView"
         android:scaleType="centerCrop"
-        android:src="@mipmap/ic_launcher"/>
+        android:src="@drawable/album"/>
     <LinearLayout
         android:layout_width="281dp"
         android:layout_height="wrap_content"
