@@ -6,11 +6,6 @@
     android:background="@color/black"
     tools:context=".MainActivity">
 
-    <LinearLayout
-        android:orientation="vertical"
-        android:layout_width="match_parent"
-        android:layout_height="150dp"
-        android:id="@+id/l1"/>
 
     <ImageView
         android:id="@+id/logo_main"
@@ -18,6 +13,14 @@
         android:layout_height="wrap_content"
         android:src="@drawable/logo"
         android:layout_below="@id/l1"/>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:id="@+id/l1"/>
+
+
     <LinearLayout
         android:id="@+id/l2"
         android:layout_width="wrap_content"

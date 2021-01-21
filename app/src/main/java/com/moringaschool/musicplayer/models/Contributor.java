@@ -2,6 +2,8 @@
 package com.moringaschool.musicplayer.models;
 
 import java.io.Serializable;
+import java.util.List;
+
 import com.google.gson.annotations.Expose;
 import com.google.gson.annotations.SerializedName;
 
@@ -192,5 +194,11 @@ public class Contributor implements Serializable
     public void setRole(String role) {
         this.role = role;
     }
+
+    public List<Songs> getSongs() {
+        return songs;
+    }
+
+    public List<Songs> songs;
 
 }

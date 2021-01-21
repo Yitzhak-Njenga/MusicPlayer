@@ -6,6 +6,7 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.animation.Animation;
 import android.view.animation.AnimationUtils;
+import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.TextView;
 
@@ -18,9 +19,10 @@ public class MainActivity extends AppCompatActivity {
     @BindView(R.id.l2) LinearLayout mLinearLayout2;
     @BindView(R.id.tag) TextView mTag;
     @BindView(R.id.app_title) TextView mApp_tittle;
+    @BindView(R.id.logo_main) ImageView mLogo;
 
 
-   Animation DownTop,Fade;
+   Animation DownTop,Fade,RightLeft;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -30,9 +32,11 @@ public class MainActivity extends AppCompatActivity {
 
         DownTop = AnimationUtils.loadAnimation(this,R.anim.downtop);
         Fade= AnimationUtils.loadAnimation(this,R.anim.fade);
+        RightLeft=AnimationUtils.loadAnimation(this,R.anim.rightleft);
 
         mLinearLayout2.setAnimation(DownTop);
         mApp_tittle.setAnimation(Fade);
+        mLogo.setAnimation(RightLeft);
 
         final Intent intent = new Intent(MainActivity.this,MusicActivty.class);
         Thread thread = new Thread(){
