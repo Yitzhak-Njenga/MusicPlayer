@@ -12,7 +12,10 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.MusicPlayer">
-        <activity android:name=".AlbumLibrary"></activity>
+        <activity android:name=".AlbumLibrary">
+            <meta-data android:name="android.support.PARENT_ACTIVITY"
+                        android:value=".AlbumLibrary"/>
+            </activity>
         <activity android:name=".MusicActivty" />
         <activity android:name=".MainActivity"
             android:theme="@style/NoActionBarTheme">
