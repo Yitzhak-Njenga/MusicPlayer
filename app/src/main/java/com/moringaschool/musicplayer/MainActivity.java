@@ -4,6 +4,7 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.view.animation.Animation;
 import android.widget.LinearLayout;
 import android.widget.TextView;
 
@@ -16,6 +17,8 @@ public class MainActivity extends AppCompatActivity {
     @BindView(R.id.l2) LinearLayout mLinearLayout2;
     @BindView(R.id.tag) TextView mTag;
     @BindView(R.id.app_title) TextView mApp_tittle;
+
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
