@@ -11,6 +11,7 @@ The application allow users to do the following:
 1. Register.
 2. Login.
 3. Search any music.
+5. User must have internet connection to use this App.
 
 
 ## Technologies Used
