@@ -38,7 +38,7 @@ public class MainActivity extends AppCompatActivity {
         mApp_tittle.setAnimation(Fade);
         mLogo.setAnimation(RightLeft);
 
-        final Intent intent = new Intent(MainActivity.this,MusicActivty.class);
+        final Intent intent = new Intent(MainActivity.this,ButtonsActivity.class);
         Thread thread = new Thread(){
             @Override
             public void run() {

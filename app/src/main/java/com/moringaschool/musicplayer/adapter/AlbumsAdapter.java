@@ -43,6 +43,7 @@ public class AlbumsAdapter extends RecyclerView.Adapter<AlbumsAdapter.AlbumsView
         public AlbumsViewHolder(View itemView){
             super(itemView);
             ButterKnife.bind(this, itemView);
+            mContext= itemView.getContext();
 
         }
 

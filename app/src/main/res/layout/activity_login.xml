@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg"
+    tools:context=".LoginActivity">
+
+
+
+    <TextView
+        android:id="@+id/login_head"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Login Your account"
+        android:textSize="30dp"
+        android:layout_marginTop="50dp"
+        android:textColor="@color/white"
+        android:textAlignment="center"
+        android:gravity="center_horizontal" />
+
+
+    <EditText
+        android:id="@+id/login_number"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/login_head"
+        android:textColor="@color/white"
+        android:padding="20dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp"
+        android:hint="enter your Phone number"
+        android:textAlignment="center"
+        android:textColorHint="@color/white"
+        android:gravity="center_horizontal" />
+
+    <EditText
+        android:id="@+id/login_password"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/login_number"
+        android:textColor="@color/white"
+        android:padding="20dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp"
+        android:hint="enter your password"
+        android:inputType="textPassword"
+        android:textAlignment="center"
+        android:textColorHint="@color/white"
+        android:gravity="center_horizontal" />
+
+
+    <Button
+        android:id="@+id/login_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="LOGIN"
+        android:textColor="@color/white"
+        android:background="#FFFFFF"
+        android:layout_below="@id/login_password"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="50dp"
+        android:padding="20dp"/>
+
+</RelativeLayout>
