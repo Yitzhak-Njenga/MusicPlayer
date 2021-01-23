@@ -10,12 +10,10 @@ import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.moringaschool.musicplayer.R;
-import com.moringaschool.musicplayer.models.Contributor;
-import com.moringaschool.musicplayer.models.Songs;
-import com.moringaschool.musicplayer.models.Artist;
-import com.moringaschool.musicplayer.models.Datum;
-import com.moringaschool.musicplayer.models.Datum_;
-import com.moringaschool.musicplayer.models.Tracks;
+
+import com.moringaschool.musicplayer.models.Item;
+import com.moringaschool.musicplayer.models.Snippet;
+
 
 import java.util.List;
 
@@ -24,9 +22,9 @@ import butterknife.ButterKnife;
 
 public class AlbumsAdapter extends RecyclerView.Adapter<AlbumsAdapter.AlbumsViewHolder>{
     private Context mcontext;
-    private List<Contributor> mArtists;
+    private List<Item> mArtists;
 
-    public AlbumsAdapter(Context context,List<Contributor> artists){
+    public AlbumsAdapter(Context context,List<Item> artists){
         mcontext = context;
         mArtists = artists;
 
@@ -47,10 +45,10 @@ public class AlbumsAdapter extends RecyclerView.Adapter<AlbumsAdapter.AlbumsView
 
         }
 
-        public  void bindAlbums(Contributor artist){
-            mArtistName.setText(artist.getName());
-            mTittleTextView.setText(artist.getRole());
-            mAlbumLink.setText(artist.getLink());
+        public  void bindAlbums(Item artist){
+            mArtistName.setText(artist.getSnippet().getTitle());
+            mTittleTextView.setText(artist.getSnippet().getChannelTitle());
+            mAlbumLink.setText(artist.getSnippet().getDescription());
 
         }
 

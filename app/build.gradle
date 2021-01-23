@@ -24,7 +24,9 @@ android {
         }
     }
     buildTypes.each {
-        it.buildConfigField 'String', 'DEEZERAPI',DEEZER_API_KEY
+//        it.buildConfigField 'String', 'DEEZERAPI',DEEZER_API_KEY
+        it.buildConfigField 'String', 'YOUTUBEAPI',YOUTUBE_API_KEY
+
     }
     compileOptions {
         sourceCompatibility JavaVersion.VERSION_1_8

@@ -85,7 +85,7 @@ public class LoginActivity extends AppCompatActivity {
                         {
                             //if the users  credentials are correct, will be directed on home activity
                             LoadingBar.dismiss();
-                            Intent intent = new Intent(LoginActivity.this,AlbumLibrary.class);
+                            Intent intent = new Intent(LoginActivity.this,MusicActivty.class);
                             startActivity(intent);
 
 

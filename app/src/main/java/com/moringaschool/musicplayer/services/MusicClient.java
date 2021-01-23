@@ -8,7 +8,7 @@ import retrofit2.converter.gson.GsonConverterFactory;
 public class MusicClient {
 
     private static Retrofit retrofit = null;
-    private static final String BASE_URL = Constants.DEZER_API_BASE_URL;
+    private static final String BASE_URL = Constants.YOUTUBE_API_BASE_URL;
 
 
     public static Retrofit getClient(){

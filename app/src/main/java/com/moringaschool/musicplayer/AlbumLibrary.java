@@ -10,9 +10,11 @@ import android.widget.ProgressBar;
 import android.widget.TextView;
 
 import com.moringaschool.musicplayer.adapter.AlbumsAdapter;
-import com.moringaschool.musicplayer.models.Artist;
-import com.moringaschool.musicplayer.models.Contributor;
-import com.moringaschool.musicplayer.models.Songs;
+
+import com.moringaschool.musicplayer.models.Item;
+
+import com.moringaschool.musicplayer.models.Snippet;
+import com.moringaschool.musicplayer.models.YoutubeSongs;
 import com.moringaschool.musicplayer.services.MusicClient;
 import com.moringaschool.musicplayer.services.MusicApi;
 
@@ -33,7 +35,8 @@ public class AlbumLibrary extends AppCompatActivity {
     @BindView(R.id.errorText) TextView mErrorText;
 
     private AlbumsAdapter mAlbumsAdapter;
-    private List<Contributor> artists;
+    private List<Item> artists;
+
 
 
     @Override
@@ -44,14 +47,14 @@ public class AlbumLibrary extends AppCompatActivity {
 
 
         MusicApi client = MusicClient.getClient().create(MusicApi.class);
-        Call<Songs> call = client.getAlbums(Constants.DEEZER_Api);
+        Call<YoutubeSongs> call = client.getItem("snippet","video","music",Constants.YOUTUBE_Api);
 
-        call.enqueue(new Callback<Songs>() {
+        call.enqueue(new Callback<YoutubeSongs>() {
             @Override
-            public void onResponse(Call<Songs> call, Response<Songs> response) {
+            public void onResponse(Call<YoutubeSongs> call, Response<YoutubeSongs> response) {
                 hideProgressBar();
                 if (response.isSuccessful()){
-                    artists = response.body().getContributors();
+                    artists = response.body().getItems();
                     mAlbumsAdapter = new AlbumsAdapter(AlbumLibrary.this,artists);
                     mAlbumRecyclerView.setAdapter(mAlbumsAdapter);
                     RecyclerView.LayoutManager layoutManager = new LinearLayoutManager(AlbumLibrary.this);
@@ -66,7 +69,7 @@ public class AlbumLibrary extends AppCompatActivity {
             }
 
             @Override
-            public void onFailure(Call<Songs> call, Throwable t) {
+            public void onFailure(Call<YoutubeSongs> call, Throwable t) {
                 hideProgressBar();
                 showFailureMessage();
 

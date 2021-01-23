@@ -4,7 +4,7 @@ package com.moringaschool.musicplayer.models;
 import java.io.Serializable;
 import com.google.gson.annotations.Expose;
 import com.google.gson.annotations.SerializedName;
-import com.moringaschool.musicplayer.Thumbnails;
+//import com.moringaschool.musicplayer.Thumbnails;
 
 public class Snippet implements Serializable
 {
